@@ -112,4 +112,15 @@ img {
   position: relative;
   width: 28px;
   height: 28px;
+  background-color: #ffb92a;
+  border: none;
+  top: 18px;
+  left: 91%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#show-recipe:hover, #hide-recipe:hover, .search-box button:hover {
+  background-color: #e69b00;
 }
