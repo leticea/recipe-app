@@ -43,6 +43,15 @@ function searchMeal() {
         </div>
         <img src=${meal.strMealThumb} alt=${meal.strMeal} />
         <div id="ingre-container">
-      `
+          <h3>Ingredients:</h3>
+          <ul>${ingredients}</ul>
+        </div>
+        <div id="recipe">
+          <button id="hide-recipe">X</button>
+          <pre id="instructions">${meal.strInstructions}</pre>
+        </div>
+        <button id="show-recipe">View Recipe</button>
+      `;
+      resultContainer.innerHTML = recipeHtml;
     });
 }
