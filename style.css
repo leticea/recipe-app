@@ -21,3 +21,17 @@ body {
   left: 50%;
   border-radius: 10px;
 }
+
+.search-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 15px;
+}
+
+.search-box input {
+  font-size: 15px;
+  padding: 6px;
+  border: 2px solid #ccc;
+  background: transparent;
+}
