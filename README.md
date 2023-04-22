@@ -11,7 +11,7 @@
   <img alt="" src=".github/image.png">
 </p>
 
-## Analog Clock
+## Recipe Guide App
 
 ## 🚀 Tecnologias
 
@@ -23,9 +23,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Relógio analógico com JavaScript.
+App de um guia de receitas com JavaScript.
 
-Aula do canal [AsmrProg](https://www.youtube.com/watch?v=LZ40SQkal1w)
+Aula do canal [AsmrProg](https://www.youtube.com/watch?v=KASIDsuSPnQ)
 
 ## 🚀 Como Rodar
 
