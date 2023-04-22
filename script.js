@@ -1,7 +1,7 @@
 const resultContainer = document.getElementById("result");
 const searchBtn = document.getElementById("search-button");
 const searchInput = document.getElementById("search-input");
-const searchContainer = document.querySelector("search-box");
+const searchContainer = document.querySelector(".search-box");
 
 // Api url to fetch meal data
 const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
@@ -74,7 +74,7 @@ function searchMeal() {
 function getIngredients(meal) {
   let ingredientHtml = "";
   // There can be maximum of 20 ingredients
-  for (let i = 0; i <= 20; i++) {
+  for (let i = 1; i <= 20; i++) {
     const ingredient = meal[`strIngredient${i}`];
     if (ingredient) {
       const measure = meal[`strMeasure${i}`];
