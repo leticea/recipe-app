@@ -14,3 +14,35 @@ searchInput.addEventListener("keydown", (e) => {
     searchMeal();
   }
 });
+
+// Handle meal function
+function searchMeal() {
+  const userInput = searchInput.value.trim();
+  if (!userInput) {
+    resultContainer.innerHTML = `<h3>Input Field Cannot Be Empty</h3>`;
+    return;
+  }
+
+  // Fetch meal data using api with user input
+  fetch(apiUrl + userInput)
+    .then((response) => response.json())
+    .then((data) => {
+      const meal = data.meals[0];
+
+      if (!meal) {
+        resultContainer.innerHTML = `<h3>No Meal Found, Please Try Again!</h3>`;
+        return;
+      }
+
+      const ingredients = getIngredients(meal);
+      // Generate Html to display meal data
+      const recipeHtml = `
+        <div class="details">
+          <h2>${meal.strMeal}</h2>
+          <h4>${meal.strArea}</h4>
+        </div>
+        <img src=${meal.strMealThumb} alt=${meal.strMeal} />
+        <div id="ingre-container">
+      `
+    });
+}
