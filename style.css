@@ -86,3 +86,15 @@ img {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+#recipe {
+  position: absolute;
+  background-color: #1e293b;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 10px;
+  display: none;
+}
