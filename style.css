@@ -98,3 +98,18 @@ img {
   border-radius: 10px;
   display: none;
 }
+
+#recipe pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 40px 24px 24px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#hide-recipe {
+  font-size: 15px;
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
