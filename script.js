@@ -85,4 +85,16 @@ function getIngredients(meal) {
       break;
     }
   }
+  return ingredientHtml;
+}
+
+// Handle show and hide recipe for a meal
+function hideRecipe() {
+  const recipe = document.getElementById("recipe");
+  recipe.style.display = "none";
+}
+
+function showRecipe() {
+  const recipe = document.getElementById("recipe");
+  recipe.style.display = "block";
 }
