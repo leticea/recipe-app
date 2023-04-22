@@ -1,7 +1,7 @@
 const resultContainer = document.getElementById("result");
 const searchBtn = document.getElementById("search-button");
 const searchInput = document.getElementById("search-input");
-const seachContainer = document.querySelector("search-box");
+const searchContainer = document.querySelector("search-box");
 
 // Api url to fetch meal data
 const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
@@ -53,5 +53,12 @@ function searchMeal() {
         <button id="show-recipe">View Recipe</button>
       `;
       resultContainer.innerHTML = recipeHtml;
+
+      const hideRecipeBtn = document.getElementById("hide-recipe");
+      hideRecipeBtn.addEventListener("click", hideRecipe);
+      const showRecipeBtn = document.getElementById("show-recipe");
+      showRecipeBtn.addEventListener("click", showRecipe);
+      searchContainer.style.opactity = "0";
+      searchContainer.style.display = "none";
     });
 }
