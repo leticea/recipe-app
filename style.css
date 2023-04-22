@@ -68,3 +68,21 @@ img {
   font-weight: 600;
 }
 
+.details h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#show-recipe {
+  font-size: 15px;
+  position: relative;
+  left: 76%;
+  padding: 8px 12px;
+  background-color: #ffb92a;
+  border: none;
+  top: 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
