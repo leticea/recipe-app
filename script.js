@@ -60,5 +60,29 @@ function searchMeal() {
       showRecipeBtn.addEventListener("click", showRecipe);
       searchContainer.style.opactity = "0";
       searchContainer.style.display = "none";
+    })
+
+    // Handle error
+    .catch(() => {
+      searchContainer.style.opacity = "1";
+      searchContainer.style.display = "grid";
+      resultContainer.innerHTML = `<h3>Error fetching data!</h3>`;
     });
+}
+
+// Generate html for list of ingredients
+function getIngredients(meal) {
+  let ingredientHtml = "";
+  // There can be maximum of 20 ingredients
+  for (let i = 0; i <= 20; i++) {
+    const ingredient = meal[`strIngredient${i}`];
+    if (ingredient) {
+      const measure = meal[`strMeasure${i}`];
+      ingredientHtml += `<li>${measure} ${ingredient}</li>`;
+    }
+    // If ingredient doesn't exist, exit loop
+    else {
+      break;
+    }
+  }
 }
